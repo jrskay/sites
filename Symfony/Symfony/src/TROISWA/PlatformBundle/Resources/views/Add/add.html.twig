@@ -1,0 +1,33 @@
+{% extends "TROISWAPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+  Accueil - {{ parent() }}
+{% endblock %}
+
+
+{% block page_title %}
+	<h1>Ajouter</h1>
+{% endblock %}
+
+{% block troiswaplatform_body %}
+
+     <h2>Modifier une annonce</h2>
+
+		{# include("OCPlatformBundle:Advert:form.html.twig") #}
+
+		<p>!!!!!!!  ICI on met un form !!!!! </p>
+
+		<p>
+		    Vous éditez une annonce déjà existante, merci de ne pas changer
+		    l'esprit général de l'annonce déjà publiée.
+		</p>
+
+		<p>
+		<a href="{{ path('troiswa_platform_view', {'id': 1}) }}" class="btn btn-default">
+		      <i class="glyphicon glyphicon-chevron-left"></i>
+		      Retour à l'annonce
+		</a>
+	</p>
+
+
+{% endblock %}

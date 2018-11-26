@@ -1,0 +1,48 @@
+<!-- layout.phtml-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <!-- Feuilles de style externes -->
+    <link rel="stylesheet" href="css/normalize-3.0.3.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+    <!-- Feuilles de style de l'application -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- En-tête commune de l'application -->
+    <header class="blog-header">
+        <h1><a href="blog.php"><i class="fa fa-microphone"></i> Le BLOG</a></h1>
+        <nav>
+          <?php if (array_key_exists('user', $_SESSION)== false) {?>
+            <a href="register.php">REGISTER</a>
+            <a href="login.php">LOGIN</a>
+
+          <?php } else {?>
+
+          <a href="admin.php">ADMINISTRATION</a>
+          <a href="logout.php">LOGOUT</a>
+
+          <?php } ?>
+
+          <!-- <a href="admin.php"><i class="fa fa-cogs"></i> Administration</a> -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- Chargement du template PHTML spécifié par le programme PHP -->
+        <?php include $template.'.phtml' ?>
+    </main>
+
+    <!-- Pied de page commun de l'application -->
+    <footer class="blog-footer">
+        <small>Le blog des élèves de la 3W Academy</small>
+    </footer>
+</body>
+</html>

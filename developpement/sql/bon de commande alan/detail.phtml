@@ -1,0 +1,45 @@
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css.css">
+
+</head>
+<body>
+  <section>
+    <h1>Bons de commande</h1>
+
+    <a href="index.php">Retourner à l'accueil</a>
+    <p><?= $client['customerName'] ?></p>
+    <p><?= $client['contactFirstName'] ?></p>
+    <p><?= $client['contactLastName'] ?></p>
+    <p><?= $client['addressLine1'] ?></p>
+    <p><?= $client['city'] ?></p>
+
+    <table>
+      <caption>Bon de commande n°<?= $num ?></caption>
+      <thead>
+        <tr>
+          <th>Produi</th>
+          <th>Prix Unitaire</th>
+          <th>Quantité</th>
+          <th>Prix Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach ($commande as $key => $value) { ?>
+          <tr>
+            <td> <?= $value['productName'] ?></td>
+            <td> <?= $value['priceEach'] ?></td>
+            <td> <?= $value['quantityOrdered'] ?></td>
+            <td> <?= $value['totalPrice'] ?></td>
+          </tr>
+
+        <?php }?>
+
+      </tbody>
+    </table>
+
+  </section>
+</body>
+</html>

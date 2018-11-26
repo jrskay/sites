@@ -1,0 +1,31 @@
+{% extends "TROISWAPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+  Accueil - {{ parent() }}
+{% endblock %}
+
+
+{% block page_title %}
+	<h1>Accueil</h1>
+{% endblock %}
+
+{% block troiswaplatform_body %}
+
+    <h1>Hello {{ nom }}</h1>
+
+
+    <p>Bienvenu sur notre site d'annone<p>
+
+   	<ul class="nav nav-pills nav-stacked">
+
+	  {% for advert in listAdverts %}
+	    <li>
+	      <a href="{{ path('troiswa_platform_view', {'id': advert.id}) }}">
+	        {{ advert.title }}
+	      </a>
+	    </li>
+	  {% endfor %}
+
+</ul>
+
+{% endblock %}

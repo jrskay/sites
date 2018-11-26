@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PHP</title>
+</head>
+<style>
+	svg {
+    	border: 1px solid red;
+
+    }
+</style>
+<body>
+    <h1>3WA Painter</h1>
+    <svg height="600px" width="800px">
+      <?php foreach($results as $result){ ?>
+      <?= $result ?>
+    <?php } ?>
+    </svg>
+</body>
+</html>

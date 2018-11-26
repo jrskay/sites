@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+body{
+ background-image: url(artist-wallpapers.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+.container{
+  width: 1000px;
+
+}
+h1{
+  text-align: center;
+  color: red;
+  text-shadow: 1px 1px 2px yellow, 0 0 1em green, 0 0 0.2em green;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+canvas{
+  margin-left: 100px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 3px 1px rgba(0, 0, 255, .2);
+  background-color: white;
+}
+
+.black{
+  background-color: black;
+}
+.brown{
+background-color: brown;
+}
+.red{
+background-color: red;
+}
+.yellow{
+background-color: yellow;
+}
+.green{
+background-color: green;
+}
+.blue{
+background-color: blue;
+}

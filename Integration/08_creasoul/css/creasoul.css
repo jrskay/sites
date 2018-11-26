@@ -1,0 +1,190 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif; */
+* {
+    /* aide a faire en sorte que quand on met du padding et ou du border pour ne pas dépasser le contenue de la page */
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f1f4;
+  line-height: 1.15;
+  padding-top: 250px;
+  /*margin 0 px pour que tout le contenue de body prenne la page entiere*/
+  /* margin: 0px; */
+  /* espacement entre les lines */
+}
+img {
+  /*taille de l'image au max pour ne pas depasser la page*/
+  max-width: 100%;
+  /*height en auto généralement car le max-width est à 100% donc la hauteur on laisse tomber*/
+  height: auto;
+}
+/* faire une classe container qui pourrai servir */
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+header{
+  /* background-color: red; */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(55, 20, 140, 0.2);
+  z-index: 6;
+}
+.logo {
+  width: 200px;
+}
+nav {
+  background-color: #28af99;
+  border: 1px solid black;
+}
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+
+}
+ul{
+  margin: 0;
+}
+nav li {
+  /* padding: 100px; */
+  position: relative;
+}
+.sub-menu{
+  opacity: 0.5;
+  background-color: grey;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  transition: all 500ms;
+  transform: scaleY(0);
+  transform-origin: top;
+  z-index: -1;
+
+
+  /* display: none; */
+
+}
+.sub-menu li {
+  display: block;
+
+}
+li:hover .sub-menu{
+  transform: scaleY(1);
+  display: block;
+}
+
+h1,
+h2 {
+  color: #28af99;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+}
+aside{
+  background-color: #b8dcb1;
+  padding: 20px;
+  display: none;
+}
+strong{
+  background-color: purple;
+  padding: 10px;
+  top: 40px;
+  left: 20px;
+  position: relative;
+}
+em {
+  background-color: yellow;
+  padding: 10px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
+}
+main{
+  background-color: cyan;
+  position: relative;
+  z-index: 1;
+
+}
+aside {
+  position: relative;
+}
+q{
+  background-color: rgba(0, 0, 0, 1);
+  padding:15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+}
+i {
+  background-color: pink;
+  padding: 10px;
+  bottom: 40px;
+  position: fixed;
+  left: 5px;
+}
+
+/* QUAND L'ÉCCRAN FAIT AU MOINS 767PX APPLIQUE CES RÉGLES SUIVANTES
+JE VEUX VOIR MON ASIDE */
+@media screen and (min-width:767px) {
+  body {
+    background-color: #f2f1f4;
+    line-height: 1.15;
+    padding-top: 250px;
+    /*margin 0 px pour que tout le contenue de body prenne la page entiere*/
+    /* margin: 0px; */
+    /* espacement entre les lines */
+  }
+  header{
+    /* background-color: red; */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(55, 20, 140, 0.2);
+    z-index: 6;
+  }
+
+  aside{
+    display: block;
+  }
+  nav li {
+    padding: 10px;
+    display: inline-block;
+  }
+
+}
+@media screen and (min-width:1024px) {
+
+main {
+  font-size: 0;
+}
+section{
+  font-size: initial;
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 3%;
+  /* background-color: yellow; */
+  width: 67%;
+}
+
+aside{
+  font-size: initial;
+  vertical-align: top;
+  width: 30%;
+  display: inline-block;
+}
+
+}

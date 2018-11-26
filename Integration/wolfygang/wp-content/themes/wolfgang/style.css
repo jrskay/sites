@@ -1,0 +1,19 @@
+/*
+Theme Name: exemple
+Theme URI: https://wordpress.org/themes/exemple/
+Author: erwin
+Author URI: http://kilogramme.fr/
+Description: Un thème codé avec les doigts, élégant et eficace
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: exemple
+Tags: one-column, two-columns, right-sidebar, orange, footer, html5, responsive
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+body{
+  background-color: pink;
+}

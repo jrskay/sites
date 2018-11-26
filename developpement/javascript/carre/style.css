@@ -1,0 +1,9 @@
+body{
+  margin: 0;
+}
+
+.carre{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}

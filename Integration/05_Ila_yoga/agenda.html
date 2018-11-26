@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang=fr>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="css/yoga.css">
+    <title>Ila yoga</title>
+  </head>
+  <body>
+    <header class="header-main">
+      <nav class="nav-main">
+        <ul>
+          <li><a href="index.html"><i class="fas fa-calendar-alt"></i>Accueil</a></li>
+          <li><a href="agenda.html"><i class="fas fa-calendar-alt"></i>Agenda</a></li>
+          <li><a href="#"><i class="fas fa-book"></i> Livre d'or </a></li>
+          <li><a href="#"><i class="fas fa-images"></i> Album photo </a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> Nous contacter </a> </li>
+        </ul>
+      </nav>
+      <p class="message"> <span>offre promo</span> : votre premier cours d'essai gratuit !</p>
+      <h1 class="site-title">Agenda</h1>
+    </header>
+    <main>
+      <section class="container" >
+        <h2>Reserver votre place pour le prochain cours de yoga</h2>
+        <form method="get" action="index.html" >
+          <fieldset>
+            <legend>Vos coordonnées </legend>
+            <label>votre prénom</label>
+            <input type="text" placeholder="franck" name="prenom" value="">
+            <label>votre nom</label>
+            <input type="text" placeholder="dubois" name="name" value="">
+            <label>votre email</label>
+            <input type="email" placeholder="dubois.franck@hotmail.fr" name="email">
+            <label>votre age</label>
+            <input type="date">
+            <label>votre age</label>
+            <input type="number" min="0" max="120">
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Quels sont les raisons de votre venue ?</legend>
+              <label for="reason-relax"> besoin de me detendre</label>
+              <input type="checkbox" id="reason-relax">
+              <label for="doctor-may"> conseil du medecin</label>
+              <input type="checkbox" id="doctor-may">
+              <label for="friend-test">je veux tester avec des amis</label>
+              <input type="checkbox" id="friend-test">
+          </fieldset>
+          <fieldset>
+            <legend>Voulez vous souscrire </legend>
+              <label for="subcribe-yes">oui</label>
+              <input type="radio" id="subcribe-yes" name="subcribe" value="subcribe-yes">
+              <label for="subcribe-maybe">Peut etre</label>
+              <input type="radio" id="subcribe-maybe" name="subcribe" value="subcribe-maybe">
+              <label for="subcribe-no">non</label>
+              <input type="radio" id="subcribe-no" name="subcribe" value="subcribe-no">
+          </fieldset>
+          <fieldset>
+            <legend>comment avez vous connu</legend>
+              <select class="" name="reputation">
+                <option value="internet">via internet </option>
+                <option value="flyer"> propectus </option>
+                <option value="pub tv">un pub à la tv </option>
+                <option value="bouche a oreille">j'en ai entendu parler</option>
+                <option value="telephone"> demarchage par telephone </option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Raconter nous comment vous avez connu Ila Yoga</legend>
+              <textarea name="message" placeholder="lacher vous" rows="8" cols="80"></textarea>
+
+            </fieldset>
+          <input type="submit" name="" value="envoyer">
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>Alan</th>
+              <th>Jean</th>
+              <th>Batiste</th>
+              <th>Max</th>
+              <th>Marc</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>Total</th>
+              <th>Jean</th>
+              <th>Batiste</th>
+              <th>Max</th>
+              <th>Marc</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <th>2015</th>
+                <td>150€</td>
+                <td>250€</td>
+                <td colspan="2">10€</td>
+                <!-- <td>50€</td> -->
+            </tr>
+            <tr>
+              <th>2016</th>
+                <td rowspan="2">150€</td>
+                <td>250€</td>
+                <td>10€</td>
+                <td>50€</td>
+            </tr>
+            <tr>
+              <th>2017</th>
+                <td>150€</td>
+                <td>250€</td>
+                <td>50€</td>
+            </tr>
+            <tr>
+              <th>2018</th>
+                <td>150€</td>
+                <td>250€</td>
+                <td>10€</td>
+                <td>50€</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="5" >Alan</th>
+              <!-- <th>Jean</th>
+              <th>Batiste</th>
+              <th>Max</th>
+              <th>Marc</th> -->
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>Total</th>
+              <th>Jean</th>
+              <th>Batiste</th>
+              <th>Max</th>
+              <th>Marc</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <th>2015</th>
+                <td>150€</td>
+                <td>250€</td>
+                <td colspan="2">10€</td>
+                <!-- <td>50€</td> -->
+            </tr>
+            <tr>
+              <th>2016</th>
+                <td rowspan="2">150€</td>
+                <td>250€</td>
+                <td>10€</td>
+                <td>50€</td>
+            </tr>
+            <tr>
+              <th>2017</th>
+                <td>150€</td>
+                <td>250€</td>
+                <td>50€</td>
+            </tr>
+            <tr>
+              <th>2018</th>
+                <td>150€</td>
+                <td>250€</td>
+                <td>10€</td>
+                <td>50€</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer class="footer-main"> <div class="petit"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis assumenda at sed adipisci vitae <a href="#">officiis nam recusandae eveniet tenetur tota</a> nemo nihil, sapiente deleniti quas officiis nam recusandae eveniet tenetur totam odit, aut id sit commodi!</p> </div></footer>
+  </body>
+</html>

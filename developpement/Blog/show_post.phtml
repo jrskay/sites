@@ -1,0 +1,47 @@
+<h2><i class="fa fa-file-text-o"></i> Article</h2>
+<!-- pour afficher les commentaire -->
+<section class="post">
+    <h3><?= $posts['Title'] ?></h3>
+    <article><?= $posts['Content'] ?></article>
+    <small>
+        Rédigé par <?= $posts['FirstName'] ?> <?= $posts['LastName'] ?>
+        le <?= $posts['CreationTimestamp'] ?>
+    </small>
+</section>
+
+<hr>
+
+<ul class="comment-list">
+	<?php foreach($comments as $comment): ?>
+        <li class="comment">
+            <h4><i class="fa fa-comment"></i> Rédigé par <?= htmlspecialchars($comment['NickName']) ?></h4>
+            <article><?= htmlspecialchars($comment['Content']) ?></article>
+        </li>
+    <?php endforeach; ?>
+</ul>
+
+<hr>
+<!-- pour afficher le commentaire d'un commentaire -->
+<form class="generic-form" action="show_post.php?id=<?=$posts['Id']?>" method="POST">
+
+    <!-- Utilisation d'un champ caché pour spécifier à quel article rattacher le commentaire -->
+    <input type="hidden" name="postId" value="<?= $_GET['id'] ?>">
+
+    <fieldset>
+        <legend><i class="fa fa-comment-o"></i> Nouveau commentaire</legend>
+        <ul>
+            <li>
+                <label for="nickName">Pseudo :</label>
+                <input type="text" id="nickName" name="nickName">
+            </li>
+            <li>
+                <label class="textarea" for="contents">Commentaire :</label>
+                <textarea id="contents" name="contents" rows="5"></textarea>
+            </li>
+            <li>
+                <button class="button button-primary" type="submit">Ajouter</button>
+                <a class="button button-cancel" href="blog.php">Annuler</a>
+            </li>
+        </ul>
+    </fieldset>
+</form>

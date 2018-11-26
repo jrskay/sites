@@ -1,0 +1,20 @@
+#photo-list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.photo {
+  border: 10px solid white;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selected{
+  border: 10px solid green;
+}
+
+#total em{
+  color: red;
+}

@@ -1,0 +1,9 @@
+#    troiswa_platform.example:
+#        class: TROISWA\PlatformBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+# declaration du service
+
+services:
+    oc_platform.antispam:
+        class: TROISWA\PlatformBundle\Antispam\TROISWAAntispam

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>flexbox</title>
+  <link rel="stylesheet" href="css/no-flex.css">
+</head>
+
+<body>
+  <main>
+    <section>
+      <h1>CSS Flexbox !</h1>
+      <h2>6 propriétés sur le container (le parent)</h2>
+      <nav class="nav">
+        <ul>
+          <li><a href="#display-flex">display: flex;</a></li>
+          <li><a href="#flex-direction">flex-direction:</a></li>
+          <li><a href="#flex-wrap">flex-wrap:</a></li>
+          <li><a href="#justify-content">justify-content:</a></li>
+          <li><a href="#align-items">align-items:</a></li>
+          <li><a href="#align-content">align-content</a></li>
+        </ul>
+      </nav>
+    </section>
+    <hr>
+    <section>
+      <div class="example example-default">
+        <h1>Affichage par défaut</h1>
+        <div class="example-content">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div class="example example-flex">
+        <h1>Affichage en flex "display: flex;"</h1>
+        <div class="example-content">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div class="example example-inline-flex">
+        <h1>Affichage en flex "display: inline-flex;"</h1>
+        <div class="example-content">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <section>
+      <h1>flex direction</h1>
+      <div class="example example-direction">
+        <h2>flex-direction: row;</h2>
+        <div class="example-content row">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+      <div class="example example-direction">
+        <h2>flex-direction: row-reverse</h2>
+        <div class="example-content row-reverse">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+      <div class="example example-direction">
+        <h2>flex-direction: column</h2>
+        <div class="example-content column">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+      <div class="example example-direction">
+        <h2>flex-direction: column-reverse</h2>
+        <div class="example-content column-reverse">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h1>Flex wrap</h1>
+      <div class="example example-wrap">
+        <h2>flex-wrap: nowrap</h2>
+        <p>If total width of items exceeds 100% (for example 5 element with 30% width), items wont go an a new line but will have a reduced width</p>
+        <div class="example-content no-wrap">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+      <div class="example example-wrap">
+        <h2>flex-wrap: wrap</h2>
+        <p>Allow items to go on a new line</p>
+        <div class="example-content wrap">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+      <div class="example example-wrap">
+        <h2>flex-wrap: wrap-reverse</h2>
+        <p>Same but reverse order</p>
+        <div class="example-content wrap-reverse">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h1>justify-content</h1>
+      <div class="example example-justify">
+        <h2>justify-content: flex-start</h2>
+        <div class="example-content flex-start">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+      <div class="example example-justify">
+        <h2>justify-content: flex-end</h2>
+        <div class="example-content flex-end">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+      <div class="example example-justify">
+        <h2>justify-content: center</h2>
+        <div class="example-content center">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-justify">
+        <h2>justify-content: space-between</h2>
+        <div class="example-content space-between">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-justify">
+        <h2>justify-content: space-around</h2>
+        <div class="example-content space-around">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <hr>
+
+    <section>
+      <h1>align-items</h1>
+
+
+      <div class="example example-align">
+        <h2>align-items: stretch</h2>
+        <div class="example-content stretch">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-align">
+        <h2>align-items: flex-start</h2>
+        <div class="example-content flex-start">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="example example-align">
+        <h2>align-items: flex-end</h2>
+        <div class="example-content flex-end">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-align">
+        <h2>align-items: center</h2>
+        <div class="example-content center">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-align">
+        <h2>align-items: baseline</h2>
+        <div class="example-content baseline">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+
+
+
+
+      <h1>align-content: propriété quand on a plusieurs lignes ! il faut donc un flex-wrap: wrap, sinon ça sert à rien...</h1>
+
+
+      <div class="example example-align-content">
+        <h2>align-content: stretch</h2>
+        <div class="example-content stretch">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-align-content">
+        <h2>align-content: flex-start</h2>
+        <div class="example-content flex-start">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-align-content">
+        <h2>align-content: flex-end</h2>
+        <div class="example-content flex-end">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-align-content">
+        <h2>align-content: center</h2>
+        <div class="example-content center">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="example example-align-content">
+        <h2>align-content: space-between</h2>
+        <div class="example-content space-between">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-align-content">
+        <h2>align-content: space-around</h2>
+        <div class="example-content space-around">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <section>
+      <h1>5 propriétés sur les enfants (les items)</h1>
+    </section>
+    <hr>
+    <section>
+
+      <h1>Order</h1>
+
+
+      <div class="example example-order">
+        <h2>order</h2>
+        <p>on peut changer l'odre des items !! il suffit de leur donner la propriété "order"</p>
+        <p>si on veut placer le 3ème bloc avant tous les autres, on lui donne un order : 0 (par exemple)</p>
+        <div class="example-content">
+
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <hr>
+
+    <section>
+
+      <h1>Flex grow</h1>
+
+
+      <div class="example example-grow">
+        <h2>flex-grow : 1 seul item autorisé à "grossir" pour occuper le reste de la place</h2>
+        <div class="example-content one-grow">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="example example-grow">
+        <h2>flex-grow : 2 items autorisés à "grossir" pour occuper le reste de la place, mais à des proportions différents !</h2>
+        <div class="example-content two-grow">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h1>Flex shrink</h1>
+
+      <p>Redimensionner la fenêtre navigateur</p>
+      <div class="example example-shrink">
+        <h2>flex-shrink : 1 item autorisé à rétrécir "plus vite"</h2>
+        <div class="example-content one-shrink">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+      <div class="example example-shrink">
+        <h2>flex-shrink : 2 items autorisé à rétrécir "plus vite" à des rythmes différents</h2>
+        <div class="example-content two-shrink">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <section>
+      <h1>Flex-basis</h1>
+
+      <div class="example example-basis">
+        <h2>flex-basis en ROW</h2>
+        <p>prend le pas sur la Width</p>
+        <div class="example-content flex-basis-row">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-basis">
+        <h2>flex-basis en COLUMN</h2>
+        <p>prend le pas sur la Height</p>
+        <div class="example-content flex-basis-column">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nisi autem cumque corrupti possimus nihil, vel dolorem quasi, aspernatur iure voluptatum sit illo temporibus dolor laudantium quaerat, perspiciatis nemo ratione obcaecati quia, eum adipisci. Necessitatibus nemo, distinctio vel culpa! Quae, officia doloribus distinctio non vitae eligendi rerum! Optio hic voluptatum modi soluta, quibusdam saepe eius, quidem magnam laborum, repellat cumque magni qui quam! Necessitatibus quia illum possimus deserunt, officiis voluptatibus ipsa sed pariatur cum magnam quibusdam aliquam! Nihil velit labore consequuntur nesciunt omnis voluptate porro quis, voluptates odit magnam repellendus repellat provident, recusandae. Necessitatibus possimus tempora maiores aut, earum nesciunt. ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis a est voluptatibus praesentium reiciendis deleniti quisquam, quibusdam modi laborum, assumenda expedita, accusamus quaerat culpa sunt aut ut error et ab. Quam officia modi delectus nobis, sed aliquid alias quisquam perferendis cum vitae suscipit consequuntur repudiandae quos sequi. Quae est molestias repudiandae libero, voluptatum enim. Earum eaque ipsa reprehenderit voluptas voluptatem corporis repellat, minima impedit exercitationem maxime, ipsum est fuga. Perferendis error nulla animi culpa officiis. Sit corporis fugit hic aspernatur numquam voluptatum, nemo repellat vitae soluta labore. Consequatur, cumque, quisquam placeat praesentium error harum deleniti non deserunt animi accusamus?orem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis a est voluptatibus praesentium reiciendis deleniti quisquam, quibusdam modi laborum, assumenda expedita, accusamus quaerat culpa sunt aut ut error et ab. Quam officia modi delectus nobis, sed aliquid alias quisquam perferendis cum vitae suscipit consequuntur repudiandae quos sequi. Quae est molestias repudiandae libero, voluptatum enim. Earum eaque ipsa reprehenderit voluptas voluptatem corporis repellat, minima impedit exercitationem maxime, ipsum est fuga. Perferendis error nulla animi culpa officiis. Sit corporis fugit hic aspernatur numquam voluptatum, nemo repellat vitae soluta labore. Consequatur, cumque, quisquam placeat praesentium error harum deleniti non deserunt animi accusamus?</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h1>align-self : attention à ne pas mettre de height sur les items, sinon stretch marche pas...</h1>
+      <div class="example example-align-self">
+        <h2>align-self : flex-end (en solo)</h2>
+        <div class="example-content align-self-flex-end">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-align-self">
+        <h2>align-self : flex-start (en solo)</h2>
+        <div class="example-content align-self-flex-start">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-align-self">
+        <h2>align-self : center (en solo)</h2>
+        <div class="example-content align-self-center">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-align-self">
+        <h2>align-self : stretch (en solo)</h2>
+        <div class="example-content align-self-stretch">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example example-align-self">
+        <h2>align-self : baseline (en duo)</h2>
+        <div class="example-content align-self-baseline">
+          <div class="parent">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <hr>
+    <section>
+      <h1>Bonus:  les margin auto en action</h1>
+
+    </section>
+    <hr>
+    <section>
+      <h2>Mettre le bouton toujours en bas de l'article qqsoit la quantité de texte grace au margin-top: auto sur le bouton</h2>
+    </section>
+
+    <section class="margintop">
+      <article>
+        <h3>produit 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, natus! Quas doloremque voluptates nisi adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi totam, labore ex! Ea maiores expedita commodi dolorem, omnis unde
+          distinctio explicabo reiciendis eos illum iusto consequuntur blanditiis quo quis debitis vero recusandae tempore quibusdam possimus neque numquam repellat? Ipsam amet beatae dolore ipsa! Soluta dolorum consequuntur nulla odio, sapiente fuga.</p>
+        <button>achète moi !</button>
+      </article>
+      <article>
+        <h3>produit 2</h3>
+        <p>Lorem ipsum dolor sit amet, ci, natus! Quas doloremque voluptates nisi adipisci.</p>
+        <button>achète moi !</button>
+      </article>
+      <article>
+        <h3>produit 1</h3>
+        <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, earum! consectetur adipisicing elit. Sequi, natus! Quas doloremque voluptates nisi adipisci.</p>
+        <button>achète moi !</button>
+      </article>
+      <article>
+        <h3>produit 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, natus! Quas doloremque voluptates nisi adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta ducimus temporibus suscipit, pariatur, explicabo ratione. Maiores
+          iure explicabo accusantium repellat, veritatis amet maxime nihil autem doloribus necessitatibus voluptas voluptatibus.</p>
+        <button>achète moi !</button>
+      </article>
+
+    </section>
+
+    <section>
+      <h2>Mettre le dernier lien à droite (tous les liens sont dans le même parent) avec marginleft: auto sur le last-child</h2>
+    </section>
+
+    <section class="marginleft">
+
+      <nav>
+        <a href="">premier</a>
+        <a href="">deuxième</a>
+        <a href="">troisième</a>
+        <a href="">quatrième</a>
+        <a href="">cinquième</a>
+      </nav>
+
+    </section>
+
+
+  </main>
+</body>
+
+</html>

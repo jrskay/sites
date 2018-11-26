@@ -1,0 +1,22 @@
+
+        <!-- Chargement du template PHTML spécifié par le programme PHP -->
+        <!-- Page d'accueil -->
+<h2><i class="fa fa-home"></i> Accueil</h2>
+
+<!-- Liste des articles du blog -->
+<ul class="post-list">
+  <?php foreach ($posts as $post) { ?>
+    <li>
+      <h3><a href="show_post.php?id=<?= $post['Id']?>" ><?= htmlspecialchars($post['Title']) ?></a></h3>
+      <em>
+         <strong> <!-- Convertit les caractères spéciaux en entités HTML pour éviter que quelqu'un mettent des balise html et fasse pété le site  -->
+          <?= htmlspecialchars($post['FirstName'])?>
+          <?= htmlspecialchars($post['LastName'])?>
+        </strong>
+        <?= $post['CreationTimesTamp'] ?>
+      </em>
+        <p><?= htmlspecialchars($post['Content']) ?></p>
+      </li>
+    <?php } ?>
+</ul>
+   </main>

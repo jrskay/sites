@@ -1,0 +1,4 @@
+services:
+#    troisw_acommande.example:
+#        class: TROISWA\commandeBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

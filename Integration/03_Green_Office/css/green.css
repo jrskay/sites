@@ -1,0 +1,128 @@
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+
+body {
+  /* mettre une image en fond de page */
+  background-image: url(../img/fond.png);
+  font-family: "open sand",sans-serif;
+  color: #555;
+  /* espacement entre les ligne */
+  line-height: 1.3;
+  /* margin pour enlever le décalage entre le body et la fin de la page */
+  margin: 0px;
+}
+/* A faire tout le temps le selecteur suivant pour évité de dépasser la largeur du parent (balise) et qu'elle ne soient pas déformées*/
+img {
+  max-width: 100%;
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+header {
+  /* overflow: hidden permet de re-ajuster en gros ce qui dépasse est caché */
+  overflow: hidden;
+}
+.header-main {
+  background-color: #b8cb20;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+.logo {
+  width: 150px;
+  height: auto;
+  /* float c'est pour faire flotter de maniere a le déplacer */
+  float: right;
+  /*border: 1px solid red;*/
+  /* opacity=transparence */
+  /*opacity: 0.4;*/
+}
+nav {
+  /*border: 10px solidhotspot;*/
+  margin-top: 32px;
+  font-size: 1.3rom;
+  text-transform: uppercase;
+  font-family: "Oswald",sans-serif;
+}
+/* on fait un autre selecteur pour pouvoir changer la couleur du lien car si on le fai directement sur le selecteur nav il ne s'affichera pas car c'est le navigateur qui prend par défaut le lien en bleu est souligner comme en regle générale */
+nav a {
+  color: #2d4622;
+  text-decoration: none;
+  margin: 15px;
+
+}
+
+main {
+  background-color: white;
+  overflow: hidden;
+
+}
+h2 {
+  color: #b8cb20;
+  text-transform: uppercase;
+  font-weight:normal;
+  /* letter-spacing espace entre les lettres */
+  letter-spacing: -2px;
+  /* word-spacing espace entre les mots*/
+  word-spacing: 3px;
+  text-align: left;
+}
+i{
+  color: blue;
+  margin: left;
+}
+i{
+  color: blue;
+  margin: left;
+}
+/* imposer une dimension pour le logo de header si jamais le client veut changer le logo et qu'il est plus grand donc on met width et (heigth pour eviter une anamorphose) */
+
+
+/*.photo{
+  float: left;
+  width: 200px;
+  height: auto;
+   padding-right petit écart sur la droite
+  padding-right: 10px;
+}*/
+
+.cta{
+  background-color: #b8cb20;
+  text-decoration:none;
+  color: #fff;
+  padding: 10px;
+  text-transform: lowercase;
+  /* display: inline-block pour évité de dépasser  */
+  display: inline-block;
+  float: right;
+}
+/* box-sizing: border-box; pour aligner tous les blocks a mettre tous le temps devant le body*/
+article {
+background-color: white;
+margin-left: 20px;
+text-indent: 20px;
+/*clear: both;*/
+overflow: hidden;
+/* width: 48%; */
+/* float: left; */
+}
+article img {
+/* opacity: 0.5; */
+float: left;
+width: 300px;
+margin: 0 15px 15px 0;
+
+}
+article p {
+  /* background-color: orangered; */
+}
+footer{
+  text-align: center;
+  margin-top: auto;
+  font-size: 9px;
+
+}

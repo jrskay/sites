@@ -1,0 +1,18 @@
+
+<table class="generic-table meal-list">
+    <caption>Carte du restaurant</caption>
+    <tbody>
+    	<?php foreach($meals as $meal): ?>
+            <tr>
+              <!-- $wwwUrl automatisation de l'url pour éviter de retaper tout le chemin de l'url de l'image -->
+                <td><img src="<?= $wwwUrl ?>/images/meals/<?= $meal['Photo']; ?>" alt="<?= $meal['Name']; ?>"></td>
+                <td>
+                    <strong><?= $meal['Name']; ?></strong>
+                    <p><?= $meal['Description']; ?></p>
+                </td>
+                <!-- pour arrondir 2 chiffres apres la virgule -->
+                <td class="number"><strong><?= number_format($meal['SalePrice'], 2) ?></strong> €</td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>

@@ -1,0 +1,37 @@
+<h2><i class="fa fa-check"></i> Payer la commande</h2>
+
+<section class="invoice">
+    <p><strong><?= $_SESSION['user']['FirstName'] ?> <?= $_SESSION['user']['LastName'] ?></strong></p>
+    <p><?= $_SESSION['user']['Address'] ?></p>
+    <p><?= $_SESSION['user']['ZipCode'] ?> <span class="city"><?= $_SESSION['user']['City'] ?></span></p>
+</section>
+
+<table id="recapTable" class="generic-table meal-list">
+    <caption>Récapitulatif de la commande</caption>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th class="number">Quantité</th>
+            <th class="number">Prix Unitaire</th>
+            <th class="number">Prix Total</th>
+        </tr>
+    </thead>
+
+</table>
+
+<hr>
+<h3>Merci de bien vouloir procéder au paiement de la commande.</h3>
+<form class="generic-form" action="<?= $requestUrl ?>/basket" method="POST">
+  <!-- on anticipe donc on fait un imput avec le parametre value vide et c'est là que l'on va charger avec le fichier ValidateBasket.js à la fonction load. c'est pour éviter de faire des fichiers model controller etc. -->
+    <input type="hidden" name="totalOrder" id="totalOrder" value=""/>
+	<ul>
+		<li>
+			<input class="button button-primary" type="submit" value="Payer">
+			<a class="button button-cancel small" href="<?= $requestUrl ?>">Annuler</a>
+		</li>
+	</ul>
+</form>
+
+<script src="<?= $wwwUrl ?>/js/classes/BasketSession.class.js"></script>
+<script src="<?= $wwwUrl ?>/js/classes/OrderForm.class.js"></script>
+<script src="<?= $wwwUrl ?>/js/classes/ValidateBasket.class.js"></script>

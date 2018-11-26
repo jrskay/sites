@@ -1,0 +1,298 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body{
+  background-image: url(Black_Marble.jpg);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+form
+{
+    margin-top: 2em;
+}
+form fieldset
+{
+    border-radius: 4px;
+}
+form fieldset legend
+{
+    padding: 0 0.5em;
+}
+
+hr
+{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Amatic+SC|Dosis';
+
+
+/*
+https://color.adobe.com/fr/Friends-and-foes-color-theme-1175537/edit/?copy=true&base=4&rule=Custom&selected=0&name=Copie%20de%20Friends%20and%20foes&mode=rgb&rgbvalues=0.185839,0.161431,0.2,0.005772,0.633724,0.65,0.162514,0.85,0.762621,0.741231,0.95,0.442417,0.999956,1,0.650593&swatchOrder=0,1,2,3,4
+*/
+
+a
+{
+    color: #01A2A6;
+    transition: all 0.25s;
+}
+a:hover
+{
+    color: #29D9C2;
+}
+
+body
+{
+    background-image: url(Black_Marble.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1
+{
+    /* structure */
+    height: 96px; /* identique Ã  header */
+    margin: 0;
+
+    font-family: 'Amatic SC', cursive;
+    line-height: 96px;
+    text-align: center;
+}
+h1 a:hover
+{
+    color: #BDF271;
+}
+
+h1, h2
+{
+    color: #01A2A6;
+    letter-spacing: 0.1em;
+}
+
+header
+{
+    /* structure */
+    height: 128px;
+    margin-bottom: 2em;
+
+    /* presentation */
+    background-color: #2F2933;
+    border-bottom: 6px solid #01A2A6;
+}
+header nav a
+{
+    float: right;
+    margin-right: 2em;
+}
+
+footer,
+main
+{
+    margin: 0 auto;
+    width: 85%;
+}
+footer
+{
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+
+.edit
+{
+}
+
+.remove
+{
+}
+
+
+/*
+ * Styles des commentaires des articles du blog
+ */
+.comment
+{
+    list-style-type: none;
+}
+.comment h4
+{
+    color: #2F2933;
+}
+.comment-list
+{
+}
+
+
+/*
+ * Styles des articles du blog
+ */
+.post
+{
+    list-style-type: none;
+}
+.post h3
+{
+    color: #2F2933;
+}
+.post-list
+{
+}
+
+/*
+ * Styles des boutons
+ */
+
+.button
+{
+    /* structure */
+    display: inline-block;
+    padding: 0.375em 1.25em;
+
+    /* presentation */
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    line-height: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.25s, box-shadow 0.25s;
+}
+.button[disabled],
+.button[disabled]:hover
+{
+    background-color: silver;
+    box-shadow: none;
+    color: grey;
+}
+.button + .button
+{
+    margin-left: 1em;
+}
+
+.button-cancel
+{
+    background-color: #FF3300;
+    color: white;
+}
+.button-cancel:hover
+{
+    background-color: #FF6633;
+    box-shadow: 0 0 4px 2px rgba(255, 102, 51, 0.5);
+    color: white;
+}
+
+.button-primary
+{
+    background-color: #339966;
+    color: white;
+}
+.button-primary:hover
+{
+    background-color: #66CC99;
+    box-shadow: 0 0 4px 2px rgba(102, 204, 153, 0.5);
+    color: white;
+}
+
+.button:active
+{
+    box-shadow: none;
+}
+
+/*
+ * Styles des formulaires
+ */
+
+.generic-form
+{
+    margin: 0 auto;
+    width: 50%;
+}
+.generic-form fieldset
+{
+    border-color: #01A2A6;
+}
+.generic-form fieldset legend
+{
+    color: #01A2A6;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+.generic-form input[type="password"],
+.generic-form input[type="text"],
+.generic-form select,
+.generic-form textarea
+{
+    /* structure */
+    padding: 2px;
+
+    /* presentation */
+    border: 1px solid grey;
+    transition: background-color 0.33s;
+}
+.generic-form input[type="password"],
+.generic-form input[type="text"],
+.generic-form select,
+.generic-form textarea
+{
+    width: 30em;
+}
+.generic-form input[type="password"]:focus,
+.generic-form input[type="text"]:focus,
+.generic-form select:focus,
+.generic-form textarea:focus
+{
+    background-color: #E3FFFB;
+}
+.generic-form textarea
+{
+    resize: none;
+}
+.generic-form ul
+{
+    list-style-type: none;
+}
+.generic-form ul li
+{
+    margin: 1em 0;
+}
+.generic-form ul li:last-child
+{
+    margin-left: 116px; /* pour aligner avec les autres labels */
+    margin-top: 3em;
+}
+.generic-form ul li label
+{
+    /* structure */
+    display: inline-block;
+
+    /* presentation */
+    color: #2F2933;
+    font-weight: bold;
+}
+.generic-form ul li label.textarea
+{
+    vertical-align: top;
+}
+.generic-form ul li label
+{
+    width: 112px;
+}
+
+/*
+ * Styles des posts
+ */
+.post-list li{
+  list-style: none;
+}
+.post-list h3{
+   font-size: 1.6rem;
+  color: #e98351;
+ }

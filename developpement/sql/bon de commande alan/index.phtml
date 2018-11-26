@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css.css">
+
+</head>
+<body>
+  <section>
+    <h1>Bons de commande</h1>
+
+    <h2>Liste des commandes</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Commande</th>
+          <th>Date de la commande</th>
+          <th>Date de livraison</th>
+          <th>Statut</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach ($data as $index => $value) { ?>
+        <tr>
+          <td><a href="detail.php?orderNumber=<?= $value['orderNumber'] ?>"> <?= $value['orderNumber'] ?></a> </td>
+
+          <td>  <?= $value['orderDate'] ?></td>
+
+          <td> <?= $value['shippedDate']?></td>
+
+          <td> <?= $value['status']?></td>
+        </tr>
+
+      <?php } ?>
+
+      </tbody>
+    </table>
+
+  </section>
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #f9fef2;
+  font-family: 'Open Sans', sans-serif;
+}
+.container{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+    color: #00968B;
+}
+h2{
+  text-align: center;
+}
+
+table{
+  border-spacing: 0;
+
+}
+td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  width: 33%;
+}
+tr{
+  background-color: #babfb5;
+}
+a {
+  text-decoration: none;
+  color: black;
+}

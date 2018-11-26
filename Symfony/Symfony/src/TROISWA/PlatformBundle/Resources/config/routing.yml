@@ -1,0 +1,54 @@
+# faire très attention au espace et au indentations
+# troiswa_platform_homepage:
+#     path:     /coucou
+#     defaults: { _controller: TROISWAPlatformBundle:Default:index }
+#
+# troiswa_platform_advert:
+#     path:     /advert/{id}
+#     defaults: { _controller: TROISWAPlatformBundle:Advert:index }
+#     requirements:
+#         id: \d{1}
+#
+# troiswa_platform_edit:
+#     path:     /edit/{id}
+#     defaults: { _controller: TROISWAPlatformBundle:Edit:edit }
+#     requirements:
+#         id: \d{1}
+#
+# troiswa_platform_add:
+#     path:     /add
+#     defaults: { _controller: TROISWAPlatformBundle:Add:add }
+#
+#
+# troiswa_platform_delete:
+#     path:     /delete/{id}
+#     defaults: { _controller: TROISWAPlatformBundle:Delete:delete }
+#     requirements:
+#         id: \d{1}
+
+
+troiswa_platform_homepage:
+    path:     /home/{name}
+    defaults: { _controller: TROISWAPlatformBundle:Advert:index }
+
+troiswa_platform_view:
+    path:      /advert/{id}
+    defaults: { _controller: TROISWAPlatformBundle:Advert:view }
+    requirements:
+        id: \d+
+
+troiswa_platform_add:
+    path:      /add
+    defaults: { _controller: TROISWAPlatformBundle:Advert:add }
+
+troiswa_platform_edit:
+    path:      /edit/{id}
+    defaults: { _controller: TROISWAPlatformBundle:Advert:edit }
+    requirements:
+        id: \d+
+
+troiswa_platform_delete:
+    path:      /delete/{id}
+    defaults: { _controller: TROISWAPlatformBundle:Advert:delete }
+    requirements:
+        id: \d+

@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "bodega"; src: url(../fonts/BodegaSans_Black.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+/* font-family: 'Roboto Slab', serif; */
+body {
+  color: #949393;
+  background-image: url(../img/bg_body.svg);
+  background-color: #333333;
+  line-height: 1.15;
+  font-family: "bodega";
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-main{
+  margin-top: 20px;
+  background: linear-gradient(164deg, white 50%, #4a4a4a 50%);
+}
+.header-main img {
+  text-align: center;
+}
+.nav-main {
+  text-align: right;
+  line-height: 2;
+  padding: 15px;
+}
+.nav-main li {
+  text-align: right;
+  list-style: none;
+  padding-bottom: 10px;
+}
+.nav-main a {
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  /* width: 75%; */
+  margin-top: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+.product-title  {
+  color: #ff9d00;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ff9d00;
+  width:90%;
+  /* margin-left: 5%; */
+  padding: 0 15px 15px 15px;
+}
+p {
+  text-align: center;
+  padding: 15px;
+  line-height: 2;
+  margin-top: -10px;
+}
+.cta {
+  color: white;
+  background-color: #ff9d00;
+  padding: 15px 20% 15px 20%;
+  display: inline-block;
+  /* margin-left: 10px; */
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+/* .item-product {
+  width: 90%;
+} */
+span {
+  color: #ff9d00;
+}
+
+.intro img {
+  border: 5px solid white;
+}
+
+article {
+  background-color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  /* width: 90%; */
+}
+.infos{
+  color: #cccccc;
+  width: 100%;
+}
+.section-title{
+font-size: initial;
+padding: 20px;
+border-right: none;
+border-top: 2px solid rgba(0, 0, 0, 0.1);
+border-left: 2px solid rgba(0, 0, 0, 0.1);
+font-size: 2rem;
+}
+.social-links{
+  font-size: 50px;
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+  margin-top: 0;
+}
+.social-links a {
+    color: white;
+    padding-top: 10px;
+}
+.social-links i {
+  padding: 30px;
+}
+.video{
+  /* margin: 0; */
+  text-align: center;
+}
+.footer-main {
+  color: #cccccc;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 0 0 15px 0px  rgba(0, 0, 0, 0.5);
+}
+.footer-title {
+  text-align: center;
+}
+.footer-main p {
+  text-align: center;
+}
+.nav-footer{
+  margin-left: 0;
+}
+.nav-footer li{
+  margin: 25px;
+  list-style: none;
+  display: inline-block;
+}
+.nav-footer a {
+  /* text-decoration: none; */
+  color: white;
+}
+.nav-footer ul {
+  text-align:center;
+  padding: 0;
+}
+
+@media screen and (min-width: 200px)
+{
+  .header-main {
+    background: linear-gradient(164deg,white 40%, #4a4a4a 30%);
+  }
+}
+
+@media screen and (min-width: 767px)
+{
+  .header-main{
+    margin-top: 20px;
+    background: linear-gradient(120deg,white 50%, #4a4a4a 50%);
+    overflow: hidden;
+  }
+  .header-main img {
+    /* background-color: pink; */
+    padding-top: 30px;
+    text-align: center;
+    float: left;
+  }
+  .nav-main {
+    /* background-color: green; */
+    text-align: right;
+    line-height: 2;
+    float: right;
+    padding: 0;
+    display: inline-block;
+  }
+  .nav-main li {
+    /* background-color: purple; */
+    text-align: right;
+    list-style: none;
+    padding-bottom: 10px;
+
+  }
+  .nav-main a {
+    /* background-color: blue; */
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .site-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .products {
+    font-size: 0;
+  }
+  .products p ,
+  .cta {
+    /* on utilise la propriete suivante pour faire apparaitre les éléments selectionner car on a utiliser un font-size: 0; sur le parent */
+    font-size: initial;
+  }
+  .item-product {
+    width: 49%;
+    display: inline-block;
+  }
+
+  .item-product:nth-of-type(2n){
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (min-width:1024px)
+{
+  .header-main{
+    margin-top: 20px;
+    background: linear-gradient(130deg,white 50%, #4a4a4a 50%);
+    overflow: hidden;
+  }
+  a:hover .nav-main{
+    background-color: orange;
+  }
+  h2 + p {
+    color: purple;
+  }
+  .site-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .products {
+    /* background-color: red; */
+    font-size: 0;
+  }
+  .products p ,
+  .cta {
+    /* background-color: purple; */
+    font-size: initial;
+  }
+  .item-product {
+    width: 23%;
+    margin-right: 2.666%;
+    display: inline-block;
+  }
+  .item-product:nth-of-type(2n){
+    margin-right: 2.666%;
+  }
+  .item-product:nth-of-type(4n){
+    margin-right: 0;
+  }
+  .infos {
+    /* background-color: red; */
+    font-size: 0;
+  }
+  .social {
+    /* background-color: purple; */
+    width: 48.66%;
+    font-size: initial;
+    display: inline-block;
+    margin-right: 2.666%;
+    vertical-align: top;
+  }
+  .video {
+    /* background-color: blue; */
+    display: inline-block;
+    width: 48.66%;
+    font-size: initial;
+    vertical-align: top;
+  }
+  .social-links li {
+    display: inline-block;
+  }
+  .social a {
+    font-size: 30px;
+  }
+  .footer-main {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}

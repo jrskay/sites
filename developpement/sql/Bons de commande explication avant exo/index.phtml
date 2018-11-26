@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PHP</title>
+    <link rel="stylesheet" href="order-form.css">
+</head>
+<body>
+
+
+	<ul>
+    	<?php foreach  ($customers as $index => $customer) {  ?>
+
+        	<p><strong><?= $index ?></strong> <?= $customer['contactFirstName'] ?> <?= $customer['contactLastName'] ?></p>
+
+        
+
+
+    	<?php } ?>
+    </ul>
+
+
+</body>
+</html>

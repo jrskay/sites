@@ -1,0 +1,20 @@
+
+#rectangle{
+  background-color: blue;
+  width: 400px;
+  height: 300px;
+  border-radius: 15px;
+}
+.hide{
+  display: none;
+}
+#rectangle.limegreen{
+  /* on met important pour que les valeurs selectionner dans la classe passe par dessus les autres classe ou instruction */
+  background-color: green !important;
+}
+/* Lorsqu'on applique la classe good en plus au rectangle, il devient vert (limegreen). */
+
+.firebrick {
+  background-color: red !important;
+}
+/* Lorsqu'on applique la classe important en plus au rectangle, il devient rouge (firebrick). */

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+  <header>
+    <h1 class="site-title">Sliders, les mondes parallèles</h1>
+
+    <nav class="toolbar">
+       <a class="toolbar-toggle" href="#">Barre d'outils</a>
+    </nav>
+
+    <ul class="control">
+      <li>
+        <button type="button"  id="slider-previous" name="button"> <img src="backward-solid.svg" alt=""></button>
+      </li>
+      <li>
+        <button type="button" id="slider-toggle" name="button"> <img src="play-solid.svg" alt=""></button>
+      </li>
+      <li>
+        <button type="button" id="slider-pause" class="hide" name="button"> <img src="pause-solid.svg" alt=""></button>
+      </li>
+      <li>
+        <button type="button" id="slider-next" name="button"> <img src="forward-solid.svg" alt=""></button>
+      </li>
+      <li>
+        <button type="button" id="slider-random" name="button"> <img src="random-solid.svg" alt=""></button>
+      </li>
+    </ul>
+  </header>
+  <main>
+      <figure>
+        <img class="slider" src="1.jpg" alt="image-slider">
+        <h2 class="slider-title">Street Art</h2>
+      </figure>
+  </main>
+</body>
+<script src="js/slider.js"></script>
+</html>

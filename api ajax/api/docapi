@@ -1,0 +1,41 @@
+URL de base de l'api
+
+http://devman.fr/api
+
+
+
+1/ Gestion des clients
+
+
+récupérer client avec son id
+
+/recupOneCustomer.php?id=<id_client>
+
+recupérer client par mot-clef
+
+/recupCustomerWithKeyWord.php?keyword=<mot_clef>
+
+
+ex : http://devman.fr/api/recupOneCustomer.php?id=103
+
+
+
+?/ Gestion des offices
+
+
+
+recupérer toutes les offices
+
+/office.php
+
+
+récupérer toutes les offices par pays
+/offices.php?coutry=<country>
+(France, USA, Japan, UK, Australia)
+
+
+récupérer office par id
+/office.php?id=<id_office>
+
+
+ex : http://devman.fr/api/office.php?country=USA

@@ -1,0 +1,48 @@
+body{
+  background-color: #ebebeb;
+}
+
+button{
+  width: 30px;
+  height: 30px;
+}
+
+ul{
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure{
+  margin-top: 70px;
+}
+.slider,
+.slider-title{
+  transform: rotate(-15deg);
+}
+.toolbar{
+  margin-left: 100px;
+}
+
+.hide {
+	display:none;
+}
+
+main {
+  text-align: center;
+}
+
+.slider {
+  margin: 20px;
+  width: 600px;
+  height: 500px;
+  border: 15px solid white;
+  border-radius: 20px;
+
+}
+.slider-title{
+  color: #2a8782;
+}

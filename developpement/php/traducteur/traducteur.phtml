@@ -1,0 +1,56 @@
+<!-- ce que j'ai fais -->
+<!-- <div id="">
+  <header>
+    <h1>Traducteur Anglais - Français</h1>
+  </header>
+  <main>
+    <form class="" action="traducteur.php" method="post">
+      <input type="text" name="mot" value="">
+      <select name="choice" >
+        <option value="toEnglish">français vers anglais</option>
+        <option value="toFrench">anglais vers français</option>
+      </select>
+      <input type="submit" value="Go"/>
+    </form>
+  </main>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PHP</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="05-exercice-traducteur.css">
+</head>
+<body>
+    <header>
+        <h1>Traducteur Anglais - Français</h1>
+    </header>
+
+    <main>
+
+            <form action="traducteur.php" method="POST">
+                <ul>
+                    <li>
+                        <label for="word">Mot :</label>
+                        <input type="text" id="word" name="word">
+                    </li>
+                    <li>
+                        <label for="direction">Sens de traduction :</label>
+                        <select id="direction" name="direction">
+                            <option value="toEnglish">Français vers Anglais</option>
+                            <option value="toFrench">Anglais vers Français</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="submit" value="Traduire">
+                    </li>
+                </ul>
+            </form>
+        <?php if($result != null): ?>
+            <p><?= $result ?></p>
+        <?php endif; ?>
+    </main>
+</body>
+</html>

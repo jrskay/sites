@@ -1,0 +1,11 @@
+
+body {
+  background-color: #e8f6ff;
+}
+fieldset,
+input,
+label,
+{
+  text-align: center;
+  display: block;
+}

@@ -1,0 +1,34 @@
+<!-- attention ca sera la page ou on va payer  -->
+<main>
+        <!-- Affichage du template lié à la vue -->
+        <h2><i class="fa fa-star"></i> Merci d'avoir commandé au 3WA Restaurant ! </h2>
+
+<h3>Il faut payer maintenant !!</h3>
+
+<form action="<?=$requestUrl?>/order/validate?orderId=<?=$_GET['orderId']?>" method="post" id="payment-form">
+  <div class="form-row">
+    <input type="text" class="form-control mb-3 StripeElement StripeElemen--empty" placeHolder="Prénom" name="first_name">
+
+    <input type="text" class="form-control mb-3 StripeElement StripeElemen--empty" placeHolder="Nom" name="last_name">
+
+    <div id="card-element" class="form-control ">
+      <!-- A Stripe Element will be inserted here. -->
+    </div>
+
+    <!-- Used to display form errors. -->
+    <div id="card-errors" role="alert"></div>
+  </div>
+
+  <button class="button button-primary">Submit Payment</button>
+<a class="button button-cancel" href="<?= $requestUrl ?>/delete?orderId=<?=$_GET['orderId']?>">Annuler</a>
+
+</form>
+
+<a class="button button-primary" href="/dev/Restaurant (corrigé)/index.php">Accueil</a>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="<?=$wwwUrl?>/js/charge.js"></script>
+
+<!-- Classes de gestion du formulaire de commande -->
+<!-- Ce code JavaScript n'est chargé QUE depuis l'URL /order/payment/success -->
+<script src="/dev/Restaurant (corrigé)/application/www/js/classes/BasketSession.class.js"></script>
+<script src="/dev/Restaurant (corrigé)/application/www/js/classes/OrderForm.class.js"></script>    </main>
